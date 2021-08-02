@@ -1,0 +1,42 @@
+header {
+    /* position: absolute; */
+    display: flex;
+    width: 100%;
+}
+.logo-menubar {
+    /* border: 1px solid red; */
+    padding: .5rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.logo {
+    width: 80px;
+}
+.menu-bar-icon {
+    /* border: 1px solid blue; */
+    transition: 0.4s ease-in-out all;
+
+}
+.menu-bar-icon:hover {
+transform: rotate(270deg);
+}
+.menu-bar-icon > button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.nav {
+    /* display: none; */
+    position: absolute;
+    border: 1px solid red;
+    width: 90vw;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nav-links {
+    /* position: absolute; */
+}
