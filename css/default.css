@@ -257,10 +257,11 @@ ul {
     margin-bottom: 0.35rem;
 }
 .title-underline {
-    background-color: var(--primary-400);
+    background-color: var(--grey-500);
     width: 7rem;
     height: 0.25rem;
     margin: 0 auto;
+    border-radius: var(--borderRadius);
 }
 .hero-text {
     font-family: var(--heroFont);

@@ -4,7 +4,7 @@
         NavBar
     ====================
 */
-header {
+.mobile-head {
     position: absolute;
     display: flex;
     width: 100%;
@@ -79,58 +79,103 @@ transform: rotate(270deg);
     color: #f9f9fa;
     font-size: 1.2rem;
 }
+.hero-img-wrap {
+    position: relative;
+    z-index: -2;
+}
+.desktop-nav-hero {
+    display: none;
+}
+.mobile-hero-cover {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+}
+
+
+/* ========================
+    Our Working Progress
+   ======================== */
+.title {
+    margin-top: 3rem;
+}
+.title > h2 {
+    font-size: 1.7rem;
+    letter-spacing: var(--letterSpacing);
+}
+.progress-wrap {
+    width: 90vw;
+    min-width: var(--min-width);
+    display: flex;
+    /* flex-wrap: wrap; */
+    border: 1px solid red;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem auto;
+    
+}
+.progress-wrap > div {
+    border: 1px solid green;
+    min-height: 100%;
+    width: 20vw;
+}
+.book-online, .confirmation, .satisfaction {
+    border: 1px solid blue;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 @media (min-width: 769px) {
-    .logo-menubar {
-        display: block;
-     
+    .mobile-nav-hero {
+        display: none;
     }
-   .menu-bar-icon {
-       display: none;
-   }
-   .nav-wrap {
-       border: 1px solid green;
-       position: initial;
-       visibility: visible;
-       display: block;
-       z-index: 1;
-       transform: scale(1);
-       background-color: transparent;
-       height:fit-content;
-       text-align: right;
-   }
-   .nav {
-       background-color: transparent;
-       height: fit-content;
-       width: fit-content;
-   }
-   .nav-links {
-       border: 1px solid red;
-       /* display: inline-block; */
-       /* float: right; */
-       /* display: flex;
-       flex-direction: row; */
-   }
-   .close-icon {
-       display: none;
-   }
-   .nav-links > li {
-       background-color: transparent;
-       padding: 0;
-       margin: 0;
-       display: inline-block;
-       /* align-items: flex-end; */
-   }
-    .nav-links > li > a {
-        color: var(--grey-600);
-        display: inline;
+    .desktop-nav-hero {
+    display: block;
     }
-}
+    .desktop-nav {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5rem;
+    }
+    .desktop-logo {
+        width: 150px;
+    }
+    .desktop-nav-links > a {
+        color: var(--grey-200);
+        display: inline-block;
+        padding: 0.375rem 1rem;
+    }
+    .desktop-hero-wrap {
+        width: 100%;
+        min-height: 100vh;
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/hero-img.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .desktop-hero-text {
+        /* border: 1px solid red;
+        font-size: 5.5rem;
+        display: flex;
+        flex-direction: column; */
+        /* width: 50%; */
+        /* width: 40%; */
+    }
+    
 
-.hero-img-wrap {
-    border: 1px solid red;
-    width: 100vw;
-    height: 100vh;
-    box-sizing: border-box;
+    .progress-wrap {
+        width: 70vw;
+    }
 }
