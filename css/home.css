@@ -1,5 +1,9 @@
 @import url(./default.css);
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* ===================== 
         NavBar
     ====================
@@ -275,6 +279,48 @@ margin-top: 1.5rem;
     transform: scale(.9);
 }
 
+/* ====================
+    Footer section
+    =================== */
+footer {
+    background-color: var(--grey-800);
+    color: var(--white);
+}
+.footer-wrap {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 1rem 1rem 2rem 1rem;
+    display: grid;
+}
+.content {
+    margin-top: 3rem;
+}
+.social-icon {
+    margin-top: 1rem;
+}
+.social-icon img {
+    margin-right: 1rem;
+    width: 20px;
+}
+.content > ul > li > a, small, .content > ul > li {
+    color: var(--grey-200);
+}
+.content > ul > li > img {
+    margin-right: 1rem;
+}
+.content ul li {
+    margin-top: 1rem;
+}
+.footer-wrap > p {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: .8rem;
+}
+.back-to-top {
+    text-align: right;
+    margin-top: 1rem;
+}
+
 
 @media (max-width: 600px) {
     .progress-wrap {
@@ -304,16 +350,21 @@ margin-top: 1.5rem;
     .desktop-nav-hero {
     display: block;
     }
-    .desktop-nav {
+    .desktop-nav-wrap {
         position: absolute;
         width: 100%;
+    }
+    .desktop-nav {
+        width: 90vw;
         display: flex;
+        justify-content: center;
         justify-content: space-between;
         align-items: center;
         padding: 0 5rem;
+        margin: 0 auto;
     }
     .desktop-logo {
-        width: 150px;
+        width: 100px;
     }
     .desktop-nav-links > a {
         color: var(--grey-200);
@@ -374,6 +425,22 @@ margin-top: 1.5rem;
        ================== */
     .choose-us > p {
         font-size: 1.3rem;
+    }
+
+    /* ==================
+        FOOTER
+       ================== */
+       .footer-wrap {
+           width: 80vw;
+       }
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer-wrap > p {
+        display: inline-block;
+        max-width:  100% !important;
+
     }
 }
 
