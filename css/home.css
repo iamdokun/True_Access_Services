@@ -5,7 +5,7 @@ html {
 }
 
 /* ===================== 
-        NavBar
+        NavBar Mobile & Desktop
     ====================
 */
 .mobile-head {
@@ -21,7 +21,7 @@ html {
     width: 100%;
 }
 .logo {
-    width: 80px;
+    width: 60px;
 }
 .menu-bar-icon {
     transition: var(--transition);
@@ -95,6 +95,27 @@ transform: rotate(270deg);
     width: 100%;
     min-height: 100%;
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    display: flex;
+    align-items: center;
+}
+.mobile-hero-text {
+    font-size: 1.1rem;
+    color: var(--white);
+    width: 40vw;
+    margin-left: 1.8rem;
+    margin-top: 3rem;
+    font-family: 'Bodoni Moda', serif;
+    text-transform: none;
+}
+.mobile-hero-btn {
+    font-family: var(--headingFont);
+    background-color: #FB1E1E;
+    color: var(--white);
+    border: 1px solid #FB1E1E;
+    border-radius: var(--borderRadius);
+    font-size: 1rem;
+    padding: .4rem 1rem;
+    margin-top: .4rem;
 }
 
 
@@ -115,22 +136,16 @@ transform: rotate(270deg);
     width: 90vw;
     min-width: var(--min-width);
     display: flex;
-    /* flex-wrap: wrap; */
-    /* border: 1px solid red; */
     justify-content: space-between;
     align-items: center;
     margin: 2rem auto;
-    
-    
 }
 .progress-wrap > div {
-    /* border: 1px solid green; */
     min-height: 100%;
     width: 25vw;
     text-align: center;
 }
 .book-online, .confirmation, .satisfaction {
-    /* border: 1px solid blue; */
     width: 100%;
     height: 130px;
     display: flex;
@@ -164,11 +179,9 @@ transform: rotate(270deg);
     margin-bottom: 2rem;
 }
 .provide-div p {
-    /* border: 1px solid red; */
     margin: 0 auto;
     width: 83vw;
     font-size: 1rem;
-    /* min-width: 80vw; */
 }
 
 /* ======================
@@ -181,8 +194,6 @@ transform: rotate(270deg);
     padding-bottom: 3rem;
 }
 .services-wrap {
-    /* border: 1px solid red; */
-    /* margin-top: 2rem; */
     display: grid;
     gap: 2rem;
     width: 90vw;
@@ -191,7 +202,6 @@ transform: rotate(270deg);
 }
 .services {
     position: relative;
-/* border: 1px solid blue; */
 border-radius: var(--borderRadius);
 background-color: var(--backgroundColor);
 box-shadow: var(--shadow-3);
@@ -253,7 +263,6 @@ margin-top: 1.5rem;
     Why Choose Us section
     ================= */
 .choose-us-wrap {
-    /* border: 1px solid green; */
     padding: 1rem 0 2.5rem 0;
 }
 .choose-us {
@@ -273,6 +282,7 @@ margin-top: 1.5rem;
     transition: var(--transition);
     box-shadow: var(--shadow-4);
     color: var(--white);
+    cursor: pointer;
 }
 
 .choose-us button:hover {
@@ -321,6 +331,32 @@ footer {
     margin-top: 1rem;
 }
 
+@media (max-width: 768px) {
+    .mobile-hero-text {
+    font-size: 2rem;
+    color: var(--white);
+    width: 40vw;
+    margin-left: 1.8rem;
+    margin-top: 3rem;
+    font-family: 'Bodoni Moda', serif;
+    text-transform: none;
+}
+.mobile-hero-btn {
+    font-family: var(--headingFont);
+    background-color: #FB1E1E;
+    color: var(--white);
+    border: 1px solid #FB1E1E;
+    border-radius: var(--borderRadius);
+    font-size: 1rem;
+    padding: .4rem 1rem;
+    margin-top: .4rem;
+}
+.services-wrap {
+        grid-template-columns: repeat(2, 1fr);
+        width: 90vw;
+}
+}
+
 
 @media (max-width: 600px) {
     .progress-wrap {
@@ -331,7 +367,6 @@ footer {
     }
     .progress-wrap > div {
         min-width: 80vw;
-        /* height: 150px; */
     }
     .book-online, .confirmation, .satisfaction {
         height: 80px;
@@ -339,7 +374,31 @@ footer {
     .confirmation, .satisfaction {
         margin-top: 1rem;
     }
+    .mobile-hero-text {
+    font-size: 1.1rem;
+    color: var(--white);
+    width: 40vw;
+    margin-left: 1.8rem;
+    margin-top: 3rem;
+    font-family: 'Bodoni Moda', serif;
+    text-transform: none;
 }
+.mobile-hero-btn {
+    font-family: var(--headingFont);
+    background-color: #FB1E1E;
+    color: var(--white);
+    border: 1px solid #FB1E1E;
+    border-radius: var(--borderRadius);
+    font-size: 1rem;
+    padding: .4rem 1rem;
+    margin-top: .4rem;
+}
+.services-wrap {
+        grid-template-columns: repeat(1, 1fr);
+        width: 90vw;
+    }
+}
+
 
 
 
@@ -379,25 +438,39 @@ footer {
         background-size: cover;
         background-position: center;
         display: flex;
-        justify-content: center;
         align-items: center;
     }
     .desktop-hero-text {
-        /* border: 1px solid red;
-        font-size: 5.5rem;
-        display: flex;
-        flex-direction: column; */
-        /* width: 50%; */
-        /* width: 40%; */
+        display: grid;
+        font-size: 4rem;
+        width: 45vw;
+        margin-left: 10rem;
+        color: var(--white);
+        font-family: 'Bodoni Moda', serif;
+        text-transform: none;   
     }
-    
+    .hero-btn {
+        width: 25vw;
+        font-size: 2.5rem;
+        padding: 1rem 0;
+        font-family: var(--headingFont);background-color: #FB1E1E;
+        color: var(--white);
+        border-radius: 15px;
+        border: 1px solid #FB1E1E;
+        transition: var(--transition);
+        cursor: pointer;
+        box-shadow: var(--shadow-4);
+        margin-top: 1rem;
+    }
+    .hero-btn:hover {
+        transform: scale(.9);
+    }
 
     .progress-wrap {
         width: 65vw;
         margin: 3rem auto;
     }
     .progress-wrap > div {
-        /* border: 1px solid red; */
         width: 19vw;
     }
     .book-online, .confirmation, .satisfaction {
@@ -416,7 +489,7 @@ footer {
         Our Services
        =================== */
     .services-wrap {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         width: 80vw;
     }
 
@@ -441,6 +514,24 @@ footer {
         display: inline-block;
         max-width:  100% !important;
 
+    }
+}
+@media (min-width: 1150px) {
+     .desktop-hero-text {
+         width: 45vw;
+     }
+    .hero-btn {
+        max-width: 14vw;
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+
+    /* ===================
+        Our Services
+       =================== */
+    .services-wrap {
+        grid-template-columns: repeat(4, 1fr);
+        width: 80vw;
     }
 }
 
