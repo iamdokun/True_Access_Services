@@ -97,6 +97,9 @@ transform: rotate(270deg);
 /* ========================
     Our Working Progress
    ======================== */
+.working-progress-wrap {
+    margin: 4rem 0;
+}
 .title {
     margin-top: 3rem;
 }
@@ -162,6 +165,84 @@ transform: rotate(270deg);
     width: 83vw;
     font-size: 1rem;
     /* min-width: 80vw; */
+}
+
+/* ======================
+    Our Services
+    ====================== */
+.our-services-wrap {
+    background-color: var(--grey-100);
+    border-radius: 20px;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+.services-wrap {
+    /* border: 1px solid red; */
+    /* margin-top: 2rem; */
+    display: grid;
+    gap: 2rem;
+    width: 90vw;
+    margin: 1rem auto;
+    text-align: center;
+}
+.services {
+    position: relative;
+/* border: 1px solid blue; */
+border-radius: var(--borderRadius);
+background-color: var(--backgroundColor);
+box-shadow: var(--shadow-3);
+margin-top: 1.5rem;
+}
+.service-cover {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    border-radius: var(--borderRadius);
+    visibility: hidden;
+    transition: var(--transition);
+    transform: scale(0);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+}
+.service-btn {
+    padding: 1rem 2rem;
+    border: 1px dotted #FB1E1E !important;
+    color: var(--white) !important;
+    border-radius: var(--borderRadius);
+    transition: var(--transition) !important;
+}
+.service-btn:hover {
+    background-color: #fb1e1e !important;
+}
+.services:hover .service-cover {
+    box-shadow: var(--shadow-4);
+    visibility: visible;
+    transform: scale(1);
+}
+.services h4 {
+    margin-top: 1.5rem;
+    top: 100%;
+    color: var(--primary-500);
+}
+.services p {
+    width: 75%;
+    margin: 0 auto;
+    color: var(--grey-600);
+}
+.services button {
+    margin-top: 1rem;
+    color: var(--primary-500);
+    background-color: transparent;
+    border: transparent;
+    margin-bottom: 1.5rem;
+    z-index: 4;
+    cursor: pointer;
+}
+.services:hover .service-btn-inner {
+    visibility: hidden !important;
 }
 
 
@@ -249,6 +330,14 @@ transform: rotate(270deg);
     .provide-div h2 {
         font-size: 2.2rem;
         font-weight: 700;
+    }
+
+    /* ===================
+        Our Services
+       =================== */
+    .services-wrap {
+        grid-template-columns: repeat(4, 1fr);
+        width: 80vw;
     }
 }
 
