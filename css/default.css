@@ -257,7 +257,7 @@ ul {
     margin-bottom: 0.35rem;
 }
 .title-underline {
-    background-color: var(--grey-500);
+    background-color: var(--grey-400);
     width: 7rem;
     height: 0.25rem;
     margin: 0 auto;

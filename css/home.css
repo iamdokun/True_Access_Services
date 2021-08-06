@@ -109,24 +109,80 @@ transform: rotate(270deg);
     min-width: var(--min-width);
     display: flex;
     /* flex-wrap: wrap; */
-    border: 1px solid red;
+    /* border: 1px solid red; */
     justify-content: space-between;
     align-items: center;
-    margin: 1rem auto;
+    margin: 2rem auto;
+    
     
 }
 .progress-wrap > div {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     min-height: 100%;
-    width: 20vw;
+    width: 25vw;
+    text-align: center;
 }
 .book-online, .confirmation, .satisfaction {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     width: 100%;
-    height: 200px;
+    height: 130px;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: var(--shadow-3);
+    border-radius: var(--borderRadius);
+}
+.book-online img, .confirmation img, .satisfaction img {
+    width: 30px;
+}
+.confirmation, .satisfaction {
+    background-color: var(--primary-500);
+}.progress-div h4 {
+    margin-top: 1.5rem;
+    color: var(--primary-500);
+    font-weight: 700;
+}
+.provide-div {
+    width: 90vw;
+    min-width: var(--min-width);
+    background-color: var(--primary-500);
+    text-align: center;
+    margin: 2rem auto;
+    color: var(--white);
+    border-radius: var(--borderRadius);
+    padding: 1.5rem 1rem;
+}
+.provide-div h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+.provide-div p {
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    width: 83vw;
+    font-size: 1rem;
+    /* min-width: 80vw; */
+}
+
+
+
+@media (max-width: 600px) {
+    .progress-wrap {
+        flex-direction: column;
+        border: 1px var(--grey-400) dotted;
+        padding: 1rem 0;
+         border-radius: var(--borderRadius);
+    }
+    .progress-wrap > div {
+        min-width: 80vw;
+        /* height: 150px; */
+    }
+    .book-online, .confirmation, .satisfaction {
+        height: 80px;
+    }
+    .confirmation, .satisfaction {
+        margin-top: 1rem;
+    }
 }
 
 
@@ -176,6 +232,24 @@ transform: rotate(270deg);
     
 
     .progress-wrap {
-        width: 70vw;
+        width: 65vw;
+        margin: 3rem auto;
+    }
+    .progress-wrap > div {
+        /* border: 1px solid red; */
+        width: 19vw;
+    }
+    .book-online, .confirmation, .satisfaction {
+        height: 150px;
+    }
+
+    .provide-div {
+        width: 65vw;
+    }
+    .provide-div h2 {
+        font-size: 2.2rem;
+        font-weight: 700;
     }
 }
+
+
