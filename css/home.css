@@ -355,6 +355,15 @@ footer {
         grid-template-columns: repeat(2, 1fr);
         width: 90vw;
 }
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.footer-wrap > p {
+        display: inline-block;
+        max-width:  100% !important;
+
+    }
 }
 
 
@@ -398,6 +407,10 @@ footer {
         grid-template-columns: repeat(1, 1fr);
         width: 90vw;
     }
+    .footer-content {
+        display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
 }
 
 
