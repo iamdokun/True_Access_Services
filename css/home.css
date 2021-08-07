@@ -382,6 +382,7 @@ footer {
     margin-top: 3rem;
     font-family: 'Bodoni Moda', serif;
     text-transform: none;
+    display: none;
 }
 .mobile-hero-btn {
     font-family: var(--headingFont);
