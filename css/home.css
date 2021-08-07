@@ -389,7 +389,7 @@ footer {
     color: var(--white);
     border: 1px solid #FB1E1E;
     border-radius: var(--borderRadius);
-    font-size: 1rem;
+    font-size: .5rem;
     padding: .4rem 1rem;
     margin-top: .4rem;
 }
